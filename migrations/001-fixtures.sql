@@ -7,10 +7,10 @@ INSERT INTO users (
   is_admin
 )
 VALUES
-  ('Super', NULL, 'Admin', 'superadmin', md5('superadmin'), TRUE),
-  ('John', 'William', 'Doe', 'j.doe', md5('password'), FALSE),
-  ('Stephen', NULL, 'King', 's.king', md5('password'), FALSE),
-  ('Peter', NULL, 'Parker', 'p.parker', md5('spidey'), FALSE);
+  ('Super', NULL, 'Admin', 'superadmin', '$2b$12$wxHYfwspiqt8VSEobdh3puV3Bq36ph.QzGYVlVdZi8wxyU0JUnmVy', TRUE),
+  ('John', 'William', 'Doe', 'j.doe', '$2b$12$sJx8dGT0SjyrWpXGfWrijO/ckkskOlaaS4PZjsH6KYcj/FbOvY8oW', FALSE),
+  ('Stephen', NULL, 'King', 's.king', '$2b$12$sJx8dGT0SjyrWpXGfWrijO/ckkskOlaaS4PZjsH6KYcj/FbOvY8oW', FALSE),
+  ('Peter', NULL, 'Parker', 'p.parker', '$2b$12$sJR69gYT5SWcjawPNhFNZereBEqn4imq4kSYKH7oonvFaX..ijUoO', FALSE);
 
 INSERT INTO students (name) VALUES
   ('Chuck'), ('James'), ('Thor'), ('Clint'),

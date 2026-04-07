@@ -39,6 +39,8 @@ async def index(request: Request):
         async with app['db'].acquire() as conn:
             user = await User.get_by_username(conn, username)
         if user and user.check_password(password):
+            # Regenerate session to prevent session fixation attacks
+            session.invalidate()
             session['user_id'] = user.id
             auth_user = user
         else:
